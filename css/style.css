@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #a55850;
+    --primary: #e36f1f;
     --light: #F0FBFC;
     --dark: #181d38;
 }
@@ -11,7 +11,10 @@
 .fw-semi-bold {
     font-weight: 700 !important;
 }
-
+.your-icon-class {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+}
 .back-to-top {
     position: fixed;
     display: none;
