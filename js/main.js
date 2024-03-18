@@ -10,8 +10,14 @@
         }, 1);
     };
     spinner();
-    
-    
+
+    $('.gallery1').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
     // Initiate the wowjs
     new WOW().init();
 
@@ -69,28 +75,7 @@
 
     // Gallery
     /*	gallery */
-    $(document).ready(function(){
-        $(".fancybox").fancybox();
-        $(".filter-button").click(function(){
-            var value = $(this).attr('data-filter');
 
-            if(value === "all")
-            {
-                $('.filter').show('1000');
-            }
-            else
-            {
-                $(".filter").not('.'+value).hide('3000');
-                $('.filter').filter('.'+value).show('3000');
-
-            }
-
-            if ($(".filter-button").removeClass("active")) {
-                $(this).removeClass("active");
-            }
-            $(this).addClass("active");
-        });
-    });
     /*	end gallery */
 
     $(document).ready(function(){
@@ -113,6 +98,7 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
+
 
 
     // Testimonials carousel
