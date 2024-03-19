@@ -24,6 +24,8 @@
 }
 .image-spacing {
     margin-bottom: 5px;
+    width: 400px;
+    height: 250px;
 }
 
 /*** Spinner ***/
