@@ -34,6 +34,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
@@ -62,6 +65,7 @@
         <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="index.html" class="navbar-nav-scroll nav-item nav-link active">Home</a>
             <a href="#about" class="navbar-nav-scroll nav-item nav-link">About</a>
+            <a href="#gallery" class="navbar-nav-scroll nav-item nav-link">Gallery</a>
             <a href="#courses" class="nav-item nav-link">Courses</a>
 <!--            <div class="nav-item dropdown">-->
 <!--                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>-->
@@ -195,8 +199,8 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                <h1 class="mb-4">Welcome to Navarambh Schools</h1>
-                <p class="mb-4">We believe that children are natural learners and allowing them to explore is the pathway to healthy learning.
+                <h1 class="mb-4">Welcome to Navarambh International Preschool</h1>
+                <p class="mb-4">Children are natural learners and allowing them to explore is the pathway to healthy learning.
                     At Navarambh, we celebrate every child and their uniqueness. An age - appropriate curriculum and an
                     unhurried childhood are the most important qualities of ours.
                     Children learn through imitation and want to explore and experience themselves.</p>
@@ -247,11 +251,11 @@
             <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="curriculum-item bg-light">
                     <div class="text-center p-4">
-                        <p>The curriculum is carefully designed to meet the overall development of the child that
-                            focuses on the physical, cognitive and logical thinking, fine and gross motor skills,
-                            sensorial development, social - emotional, language work through stories, rhymes and songs,
-                            learning alphabets with sounds, learning mathematical concepts through shapes, colours and
-                            numbers. </p>
+                        <p>The curriculum is carefully designed to meet the overall development of the child.
+                            It focuses on the physical, cognitive and logical thinking, fine and gross motor skills,
+                            sensorial development, social - emotional, eye - hand coordination, language work through
+                            stories, rhymes and songs, vocabulary building, alphabets with sounds, Fun with numbers,
+                            exploration, creativity and encouraging curiosity in every child. </p>
                     </div>
                 </div>
             </div>
@@ -384,11 +388,11 @@
     </div>
 </div>
 <!-- Nursery Modal -->
-<div class="modal fade" id="nurseryModal" tabindex="-1" aria-labelledby="playGroupModalLabel" aria-hidden="true">
+<div class="modal fade" id="nurseryModal" tabindex="-1" aria-labelledby="nurseryModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="nurseryModalLabel">Play Group</h5>
+                <h5 class="modal-title" id="nurseryModalLabel">Nursery</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -426,7 +430,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                The Senior Kindergarten is between 4.5 years - 5.5 years. The curriculum focuses on the holistic development of the child. The child learns through play and exploration.
+                The senior kindergarten is between 4.5 yrs-5.5 yrs. The curriculum focuses on the overall development of the child in literacy, numeracy and a second language in an experiential learning environment
 
             </div>
         </div>
@@ -442,7 +446,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                The Day Care is between 1.5 years - 10 years. The day care is a home away from home. The child is taken care of by the facilitators and assistant. The child is given a healthy meal and a nap time.
+                The Day Care is between 1.5 years - 10 years. The child is fed with the healthy meal provided by
+                the parent, nap time and play time. For older students, the homework are taken care of as per the
+                Parent request.
             </div>
         </div>
     </div>
@@ -451,7 +457,56 @@
 <!-- Repeat the above modal for each course, changing the id, aria-labelledby, modal-title, and modal-body as needed -->
 
 
+<!--&lt;!&ndash; Gallery Start &ndash;&gt;-->
+<!--<section id="gallery">-->
+<!--    <div class="container-xxl py-5">-->
+<!--        <div class="container">-->
+<!--            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">-->
+<!--                <h6 class="section-title bg-white text-center text-primary px-3">Gallery</h6>-->
+<!--                <h1 class="mb-5">Our Gallery</h1>-->
+<!--            </div>-->
+<!--            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">-->
+<!--                <li class="nav-item" role="presentation">-->
+<!--                    <button class="nav-link active" id="pills-classroom-tab" data-bs-toggle="pill" data-bs-target="#pills-classroom" type="button" role="tab" aria-controls="pills-classroom" aria-selected="true">Classroom Activities</button>-->
+<!--                </li>-->
+<!--                <li class="nav-item" role="presentation">-->
+<!--                    <button class="nav-link" id="pills-celebration-tab" data-bs-toggle="pill" data-bs-target="#pills-celebration" type="button" role="tab" aria-controls="pills-celebration" aria-selected="false">Celebration</button>-->
+<!--                </li>-->
+<!--                <li class="nav-item" role="presentation">-->
+<!--                    <button class="nav-link" id="pills-playtime-tab" data-bs-toggle="pill" data-bs-target="#pills-playtime" type="button" role="tab" aria-controls="pills-playtime" aria-selected="false">Play Time</button>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            <div class="tab-content" id="pills-tabContent">-->
+<!--                <div class="tab-pane fade show active" id="pills-classroom" role="tabpanel" aria-labelledby="pills-classroom-tab">-->
+<!--                    &lt;!&ndash; Insert the images for the Classroom activities category here &ndash;&gt;-->
+<!--                    <a href="img/playschool/playschool-1.jpg" ><img class="image-spacing gallery1" src="img/playschool/playschool-1.jpg"></a>-->
+<!--                    <a href="img/playschool/playschool-2.jpg" ><img class="image-spacing" src="img/playschool/playschool-2.jpg"></a>-->
+<!--                    <a href="img/playschool/playschool-3.jpg" ><img class="image-spacing" src="img/playschool/playschool-3.jpg"></a>-->
+<!--                    <a href="img/playschool/playschool-4.jpg" ><img class="image-spacing" src="img/playschool/playschool-4.jpg"></a>-->
+<!--                </div>-->
+<!--                <div class="tab-pane fade" id="pills-celebration" role="tabpanel" aria-labelledby="pills-celebration-tab">-->
+<!--                    &lt;!&ndash; Insert the images for the Celebration category here &ndash;&gt;-->
+<!--                    <img class="image-spacing" src="img/celebrations/celebration-1.jpg">-->
+<!--                    <img class="image-spacing" src="img/celebrations/celebration-2.jpg">-->
+<!--                    <img class="image-spacing" src="img/celebrations/celebration-3.jpg">-->
+<!--                    <img class="image-spacing" src="img/celebrations/celebration-4.jpg">-->
+<!--                    <img class="image-spacing" src="img/celebrations/celebration-5.jpg">-->
+<!--                    <img class="image-spacing" src="img/celebrations/celebration-6.jpg">-->
+<!--                </div>-->
+<!--                <div class="tab-pane fade" id="pills-playtime" role="tabpanel" aria-labelledby="pills-playtime-tab">-->
+<!--                    &lt;!&ndash; Insert the images for the Play Time category here &ndash;&gt;-->
+<!--                    <img class="image-spacing" src="img/playtime/playtime-1.jpg">-->
+<!--                    <img class="image-spacing" src="img/playtime/playtime-2.jpg">-->
+<!--                    <img class="image-spacing" src="img/playtime/playtime-3.jpg">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; Gallery End &ndash;&gt;-->
+
 <!-- Gallery Start -->
+<div>
 <section id="gallery">
     <div class="container-xxl py-5">
         <div class="container">
@@ -473,19 +528,19 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-classroom" role="tabpanel" aria-labelledby="pills-classroom-tab">
                     <!-- Insert the images for the Classroom activities category here -->
-                    <a href="img/playschool/playschool-1.jpg" ><img class="image-spacing gallery1" src="img/playschool/playschool-1.jpg"></a>
-                    <a href="img/playschool/playschool-2.jpg" ><img class="image-spacing" src="img/playschool/playschool-2.jpg"></a>
-                    <a href="img/playschool/playschool-3.jpg" ><img class="image-spacing" src="img/playschool/playschool-3.jpg"></a>
-                    <a href="img/playschool/playschool-4.jpg" ><img class="image-spacing" src="img/playschool/playschool-4.jpg"></a>
+                    <a href="img/playschool/playschool-1.jpg" data-lightbox="image-1" ><img class="image-spacing" src="img/playschool/playschool-1.jpg"></a>
+                    <a href="img/playschool/playschool-2.jpg" data-lightbox="image-1"><img class="image-spacing" src="img/playschool/playschool-2.jpg"></a>
+                    <a href="img/playschool/playschool-3.jpg" data-lightbox="image-1"><img class="image-spacing" src="img/playschool/playschool-3.jpg"></a>
+                    <a href="img/playschool/playschool-4.jpg" data-lightbox="image-1"><img class="image-spacing" src="img/playschool/playschool-4.jpg"></a>
                 </div>
                 <div class="tab-pane fade" id="pills-celebration" role="tabpanel" aria-labelledby="pills-celebration-tab">
                     <!-- Insert the images for the Celebration category here -->
-                    <img class="image-spacing" src="img/celebrations/celebration-1.jpg">
-                    <img class="image-spacing" src="img/celebrations/celebration-2.jpg">
-                    <img class="image-spacing" src="img/celebrations/celebration-3.jpg">
-                    <img class="image-spacing" src="img/celebrations/celebration-4.jpg">
-                    <img class="image-spacing" src="img/celebrations/celebration-5.jpg">
-                    <img class="image-spacing" src="img/celebrations/celebration-6.jpg">
+                    <a href="img/celebrations/celebration-1.jpg" data-lightbox="image-1"><img class="image-spacing" src="img/celebrations/celebration-1.jpg"></a>
+                    <a href="img/celebrations/celebration-2.jpg" data-lightbox="image-1"><img class="image-spacing" src="img/celebrations/celebration-2.jpg"></a>
+                    <a href="img/celebrations/celebration-3.jpg" data-lightbox="image-1"><img class="image-spacing" src="img/celebrations/celebration-3.jpg"></a>
+                    <a href="img/celebrations/celebration-4.jpg" data-lightbox="image-1"><img class="image-spacing" src="img/celebrations/celebration-4.jpg"></a>
+                    <a href="img/celebrations/celebration-5.jpg" data-lightbox="image-1"><img class="image-spacing" src="img/celebrations/celebration-5.jpg"></a>
+                    <a href="img/celebrations/celebration-6.jpg" data-lightbox="image-1"><img class="image-spacing" src="img/celebrations/celebration-6.jpg"></a>
                 </div>
                 <div class="tab-pane fade" id="pills-playtime" role="tabpanel" aria-labelledby="pills-playtime-tab">
                     <!-- Insert the images for the Play Time category here -->
@@ -497,6 +552,8 @@
         </div>
     </div>
 </section>
+
+</div>
 <!-- Gallery End -->
 
 
@@ -598,7 +655,7 @@
 <script src="lib/easing/easing.min.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-<!--<script src="lib/lightbox/lightbox.js"></script>-->
+<script src="lib/lightbox/lightbox.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
 

@@ -115,6 +115,12 @@
     }
 }
 
+.lightbox .lb-image {
+    max-width: 80%; /* Change this to your desired max width */
+    max-height: 80%; /* Change this to your desired max height */
+    border-radius: 4px;
+}
+
 .modal-image {
     width: 200%;
     height: 200%;
